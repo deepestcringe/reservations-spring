@@ -9,7 +9,6 @@ import java.util.List;
 public class CustomerGetService {
 
     public CustomerGetService() {
-
     }
 
     public List<CustomerResponsePOJO> getAllCustomers(){
