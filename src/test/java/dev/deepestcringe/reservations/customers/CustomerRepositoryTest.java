@@ -72,7 +72,7 @@ class CustomerRepositoryTest {
     private void makeMocks(){
         Mockito.when(entityManagerMock.createNativeQuery(Mockito.anyString())).thenReturn(mockQuery);
         List<Object[]> mockedRes = new ArrayList<>();
-        Object[] row1 = {"Jerry"};
+        Object[] row1 = {1,"Jerry"};
         mockedRes.add(row1);
 
         Mockito.when(mockQuery.getResultList()).thenReturn(mockedRes);

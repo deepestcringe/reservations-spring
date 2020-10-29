@@ -8,18 +8,14 @@ import java.util.List;
 @Service
 public class CustomerGetService {
 
-    public CustomerGetService() {
+    CustomerRepository customerRepository;
+
+    public CustomerGetService(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
     }
 
     public List<CustomerResponsePOJO> getAllCustomers(){
-        List<CustomerResponsePOJO>  ret = new ArrayList<>();
-
-        CustomerResponsePOJO jerry = CustomerResponsePOJO.builder()
-                .name("Jerry").reservations(new ArrayList<>()).build();
-
-        ret.add(jerry);
-
-        return ret;
+        return customerRepository.getAllCustomers();
     }
 
 

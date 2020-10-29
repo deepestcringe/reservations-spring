@@ -1,6 +1,7 @@
 package dev.deepestcringe.reservations.customers;
 
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ public class CustomerController {
         service = serviceIn;
     }
 
+    @CrossOrigin(origins = "http://localhost:63344")
     @GetMapping(value = "/customers")
     public Map<String, List<CustomerResponsePOJO>> searchForCustomerByName(@RequestParam(required = false) String name) {
         var responseList = service.getAllCustomers();

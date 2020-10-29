@@ -19,16 +19,19 @@ public class CustomerRepository {
 
         List<CustomerResponsePOJO> ret = new ArrayList<>();
 
-        List<Object[]> rows = em.createNativeQuery("SELECT * FROM Customers" ).getResultList();
+        List<Object[]> rows = em.createNativeQuery("SELECT * FROM reservations.customers" ).getResultList();
 
-        rows.stream().forEach(row -> {
+        System.out.println("\n\n\n" +rows + "\n\n\n\n");
+
+        for( Object[] row:rows ){
+            System.out.println("Should be Name:" + row[1]);
             var myNewCustomer =
                     CustomerResponsePOJO.builder()
-                            .name((String)row[0])
+                            .name((String)row[1])
                             .reservations(new ArrayList<>())
-                    .build();
+                            .build();
             ret.add(myNewCustomer);
-        });
+        }
 
         return ret;
 
