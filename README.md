@@ -1,8 +1,9 @@
-# Build a relational php MySQL Database backend site with bootstrap (ajax jquery)
+## Build a relational php MySQL Database backend site with bootstrap (ajax jquery)
 
 ### https://www.freelancer.com/projects/php/Build-relational-php-MySQL-Database/details
 
 
+## Requirements
 Consists of 3 main pages
 
 1. Customers list... Ajax search and sort. Lists to any reservations made by that customer. Crud features.
