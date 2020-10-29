@@ -1,4 +1,3 @@
-
 #Build a relational php MySQL Database backend site with bootstrap (ajax jquery)
 
 ###https://www.freelancer.com/projects/php/Build-relational-php-MySQL-Database/details
