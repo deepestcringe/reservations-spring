@@ -1,6 +1,6 @@
-#Build a relational php MySQL Database backend site with bootstrap (ajax jquery)
+# Build a relational php MySQL Database backend site with bootstrap (ajax jquery)
 
-###https://www.freelancer.com/projects/php/Build-relational-php-MySQL-Database/details
+### https://www.freelancer.com/projects/php/Build-relational-php-MySQL-Database/details
 
 
 Consists of 3 main pages
